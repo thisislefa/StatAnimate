@@ -181,5 +181,6 @@ const THRESHOLD = 0.2; // Intersection observer trigger point
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+[MIT License](https://github.com/thisislefa/statanimate/blob/main/LICENSE)
+
 
