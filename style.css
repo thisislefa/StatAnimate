@@ -1,0 +1,160 @@
+ /* --- GLOBAL & BASE STYLES --- */
+        :root {
+            --font-primary: 'Inter', sans-serif;
+            --color-background-dark: #000000;
+            --color-text-light: #ffffff;
+            --color-text-muted: #aaaaaa;
+            --color-card-background: #101010;
+            --color-card-border: #333333;
+            --highlight-color: #ffffff;
+            --number-size: 4rem; /* Base size for numbers */
+            --animation-duration: 2500ms; /* Total animation time for the count */
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-background-dark);
+            color: var(--color-text-light);
+            margin: 0;
+            padding: 5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures the content is centered */
+        }
+
+        /* --- SECTION STRUCTURE --- */
+        .cirka-section-wrapper {
+            max-width: 1280px;
+            width: 100%;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER STYLES --- */
+        .header-tag-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+        }
+
+        .header-tag-area::before {
+            content: "\273B"; /* Stylized asterix/snowflake icon */
+            font-size: 1.1em;
+            margin-right: 0.75rem;
+            color: var(--highlight-color);
+        }
+
+        .section-statement {
+            font-size: 2.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+        }
+
+        .inline-team-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0.5rem;
+        }
+        
+        .team-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid var(--color-background-dark);
+            object-fit: cover;
+            margin-left: -15px; /* Overlap effect */
+            background-color: #222;
+        }
+
+        .team-image:first-child {
+            margin-left: 0;
+        }
+
+        /* --- STATS GRID --- */
+        .stats-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* --- INDIVIDUAL STAT CARD --- */
+        .stat-card-item {
+            border: 1px solid var(--color-card-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: left;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .stat-category-label {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            margin-bottom: 3.5rem; /* Space before the number */
+        }
+
+        .stat-description-text {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+            margin-top: 1.5rem;
+        }
+
+        /* --- SIMPLE COUNTER STYLES --- */
+
+        .number-display-wrapper {
+            display: flex;
+            align-items: flex-start;
+            font-size: var(--number-size);
+            font-weight: 900;
+            line-height: 1;
+            color: var(--color-text-light);
+            height: var(--number-size);
+            overflow: visible; /* No need to clip the reel now */
+        }
+
+        /* Element that holds the number being counted */
+        .animated-counter-value {
+            display: inline-block;
+            min-width: 1ch; /* Ensures space for the first digit */
+            font-weight: 500;
+            font-size: 5rem;
+        }
+        
+        /* Static characters like '+' or '%' */
+        .static-char {
+            display: inline-block;
+            height: var(--number-size);
+            line-height: 1;
+            font-weight: 600;
+        }
+
+        /* --- RESPONSIVENESS --- */
+        @media (max-width: 768px) {
+            :root {
+                --number-size: 3rem; /* Smaller digits on mobile */
+            }
+            .section-statement {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+            .stat-card-item {
+                padding: 2rem;
+            }
+            .stat-category-label {
+                margin-bottom: 2rem;
+            }
+            .stats-grid-container {
+                gap: 1rem;
+            }
+        }

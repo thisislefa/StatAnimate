@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Agency Statistics Section</title>
+
+    <!-- Inter Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+    <div class="cirka-section-wrapper" id="stats-section-observer">
+        
+        <!-- Header Content -->
+        <header>
+            <div class="header-tag-area">ABOUT US</div>
+            <h2 class="section-statement">
+                At Hype, we don't just follow trends - we 
+                <span class="inline-team-icon">
+                    <!-- Placeholder images mimicking the small group of people -->
+                    <img src="https://images.unsplash.com/photo-1596215143922-eedeaba0d91c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="team-image" alt="Team member 1">
+                    <img src="https://images.unsplash.com/photo-1701450707710-23c24144c983?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="team-image" alt="Team member 2">
+                    <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="team-image" alt="Team member 3">
+                </span>
+                challenge them. We create bold, strategic work that helps brands find their voice and connect with people in meaningful ways.
+            </h2>
+        </header>
+
+        <!-- Statistics Grid -->
+        <section class="stats-grid-container">
+            
+            <!-- Stat Card 1: Projects (160+) -->
+            <div class="stat-card-item">
+                <p class="stat-category-label">Projects</p>
+                <!-- data-target holds the final value -->
+                <div class="number-display-wrapper" data-target="160" data-suffix="+">
+                    <!-- The value will be inserted into the span below by JavaScript -->
+                    <span class="animated-counter-value">0</span>
+                    <span class="static-char">+</span>
+                </div>
+                <p class="stat-description-text">Delivered across various Client Satisfaction Rate based on worldwide.</p>
+            </div>
+
+            <!-- Stat Card 2: Team Members (50+) -->
+            <div class="stat-card-item">
+                <p class="stat-category-label">Team Members</p>
+                <div class="number-display-wrapper" data-target="50" data-suffix="+">
+                    <span class="animated-counter-value">0</span>
+                    <span class="static-char">+</span>
+                </div>
+                <p class="stat-description-text">Professionals dedicated to delivering excellence and creative solutions.</p>
+            </div>
+
+            <!-- Stat Card 3: Success Rate (99%) -->
+            <div class="stat-card-item">
+                <p class="stat-category-label">Success</p>
+                <div class="number-display-wrapper" data-target="99" data-suffix="%">
+                    <span class="animated-counter-value">0</span>
+                    <span class="static-char">%</span>
+                </div>
+                <p class="stat-description-text">High client satisfaction based on worldwide reviews and feedback.</p>
+            </div>
+
+            <!-- Stat Card 4: Awards (50+) -->
+            <div class="stat-card-item">
+                <p class="stat-category-label">Awards</p>
+                <div class="number-display-wrapper" data-target="50" data-suffix="+">
+                    <span class="animated-counter-value">0</span>
+                    <span class="static-char">+</span>
+                </div>
+                <p class="stat-description-text">Recognized with numerous awards from top industry leaders.</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
