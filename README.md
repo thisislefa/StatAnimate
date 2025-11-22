@@ -4,7 +4,7 @@ A sophisticated, animated statistics section featuring smooth counting animation
 
 ## Live Demo
 
-[View Live Demo](https://thisislefa.github.io/statanimate)
+[View Live Demo](https://thisislefa.github.io/StatAnimate)
 
 ## Features
 
@@ -182,5 +182,6 @@ const THRESHOLD = 0.2; // Intersection observer trigger point
 ## License
 
 [MIT License](https://github.com/thisislefa/statanimate/blob/main/LICENSE)
+
 
 
